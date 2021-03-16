@@ -1,6 +1,8 @@
+import './footer.css';
+
 function Footer() {
     return (
-        <footer>
+        <footer className="footer">
             footer
         </footer>
     );

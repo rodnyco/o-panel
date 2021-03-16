@@ -1,0 +1,18 @@
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    padding-top: 45px;
+}
+
+.header__logo {
+    max-width: 25%;
+}
+
+.header__logo-decore {
+    max-width: 40%;
+    position: absolute;
+    left: 0;
+}
