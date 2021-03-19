@@ -6,12 +6,27 @@
 
 .body__slider {
     display: block;
-    width: 50%;
+    width: 40%;
 }
 
 .body__map {
-    width: 50%;
+    width: 60%;
 }
+
+.body__map img {
+    display: block;
+    margin: 0 auto;
+}
+
+.links-slider {
+    margin-top: 30px;
+}
+
+.links-slider__item {
+    background-color: #F6FBF2;
+    padding: 10px 10px 30px 10px;
+}
+
 
 .links-slider__item .content{
     display: flex;
@@ -19,5 +34,17 @@
 }
 
 .links-slider__item img{
-    width: 50%;
+    width: 30%;
+    height: 100%;
+}
+
+.links-slider__item p{
+    width: 70%;
+    padding-left: 10px;
+}
+
+.links-slider__item h2 {
+    color: #4A8B2C;
+    font-size: 35px;
+    margin: 0;
 }

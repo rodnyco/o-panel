@@ -18,7 +18,7 @@ export default function LinksSlider(props) {
         <div className="links-slider__item">
           <h2>{items[0].title}</h2>
           <div className="links-slider__item content">
-            <img src={items[0].qrLink} alr='link'></img>
+            <img src={items[0].qrLink} alt='link'></img>
             <p>{items[0].description}</p>
           </div>
         </div>
@@ -28,7 +28,7 @@ export default function LinksSlider(props) {
         <div className="links-slider__item">
           <h2>{items[0].title}</h2>
           <div className="links-slider__item content">
-            <img src={items[0].qrLink} alr='link'></img>
+            <img src={items[0].qrLink} alt='link'></img>
             <p>{items[0].description}</p>
           </div>
         </div>
