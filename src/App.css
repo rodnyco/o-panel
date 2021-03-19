@@ -8,6 +8,11 @@ img {
   max-width: 100%;
 }
 
+h2 {
+  color: #4A8B2C;
+  font-size: 35px;
+}
+
 .wrap {
   height: 100vh;
   padding: 0 45px 0 45px;

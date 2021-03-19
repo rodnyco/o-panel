@@ -3,7 +3,7 @@ import LinksSlider from './LinksSlider';
 
 function Body() {
     //TODO get from API
-    const map = 'https://lh3.googleusercontent.com/proxy/MBnWu_oDMJagmvS086n83JEzp2Itivig_G5wrxL4MQtxJHQ4xti-M-uurODDpchyx5KCmHJb_Ty24cAAg_3wm1PakQ';
+    const map = 'https://lh3.googleusercontent.com/proxy/onXYxLxpHV_8zzIiwdUKSYDUcC8_GLmxNM6_yoanawm_6958qsku6Y4RbQK26LU4WKvAXe4ZrGlwk7IqDZhXHDmYFg';
     //TODO get from API
     const sliderContent = {
         0: {
@@ -23,6 +23,7 @@ function Body() {
                 <LinksSlider content={sliderContent}/>
             </div>
             <div className="body__map">
+                <h2>Карта ТЦ О!Подворье</h2>
                 <img src={map} alt='map'></img>
             </div>
         </div>
