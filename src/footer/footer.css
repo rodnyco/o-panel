@@ -1,4 +1,18 @@
 .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   /* justify-content: space-between; */
+}
+
+.footer__lines {
+    padding-left: 45px;
+}
+
+.footer__decore {
     position: absolute;
-    bottom: 0;
+    right: -196px;
 }
