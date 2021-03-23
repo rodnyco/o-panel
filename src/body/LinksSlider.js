@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 export default function LinksSlider(props) {
   var settings = {
-    arrows: true,
+    arrows: false,
     dots: true,
     infinite: true,
     speed: 500,

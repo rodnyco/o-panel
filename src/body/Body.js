@@ -3,7 +3,7 @@ import LinksSlider from './LinksSlider';
 
 function Body() {
     //TODO get from API
-    const map = 'https://lh3.googleusercontent.com/proxy/onXYxLxpHV_8zzIiwdUKSYDUcC8_GLmxNM6_yoanawm_6958qsku6Y4RbQK26LU4WKvAXe4ZrGlwk7IqDZhXHDmYFg';
+    const map = 'https://opodvor.ru/upload/o-panel/map.jpg';
     //TODO get from API
     const sliderContent = {
         0: {

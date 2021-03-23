@@ -16,3 +16,38 @@
     position: absolute;
     right: -196px;
 }
+
+.footer__slider {
+    width: 75%;
+}
+
+.footer__slider h2{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer__slider {
+    margin: 0 auto;
+    max-width: 60%;
+}
+
+.declaration-slider {
+    margin-top: 30px;
+}
+
+.declaration-slider__item {
+    max-width: 200px;
+}
+
+.slick-prev {
+    left: -87px;
+}
+
+.slick-next {
+    right: -14px;
+}
+
+.slick-next, .slick-prev {
+    width: 80px;
+    height: 80px;
+}

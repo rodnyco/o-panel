@@ -22,6 +22,7 @@
 .body__map img {
     display: block;
     margin: 0 auto;
+    height: 349px;
 }
 
 .links-slider {
