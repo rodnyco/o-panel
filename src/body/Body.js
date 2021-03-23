@@ -1,30 +1,42 @@
 import './body.css';
 import LinksSlider from './LinksSlider';
+import MapSlider from './MapSlider';
 
 function Body() {
     //TODO get from API
-    const map = 'https://opodvor.ru/upload/o-panel/map.jpg';
-    //TODO get from API
-    const sliderContent = {
-        0: {
-            title: 'Наш сайт',
-            qrLink: 'https://www.kaspersky.com/content/en-global/images/repository/isc/2020/9910/a-guide-to-qr-codes-and-how-to-scan-qr-codes-2.png',
-            description: "Инмформационный портал opodvor.ru: читайте главные новости ТЦ О!Подворья, узнавайте информацию о наших кафе и магазинах, получайте анонсы мероприятий"
+    const mapContent = [
+        {
+            id: 0,
+            title: 'Карта первый этаж',
+            link: 'https://opodvor.ru/upload/o-panel/map.jpg'
         },
-        1: {
-            title: 'Доствка продуктов на дом',
-            qrLink: 'https://www.kaspersky.com/content/en-global/images/repository/isc/2020/9910/a-guide-to-qr-codes-and-how-to-scan-qr-codes-2.png',
-            description: "Инмформационный портал opodvor.ru: читайте главные новости ТЦ О!Подворья, узнавайте информацию о наших кафе и магазинах, получайте анонсы мероприятий"
-        }
-    };
+        {
+            id: 0,
+            title: 'Карта второй этаж',
+            link: 'https://opodvor.ru/upload/o-panel/map.jpg'
+        },
+    ];
+    //TODO get from API
+    const sliderContent = [
+        {
+            id: 0,
+            title: 'Банер 1',
+            link: 'https://opodvor.ru/upload/iblock/e9f/e9f0e4e85de12dc4fc37ee4c5e375e76.jpg'
+        },
+        {
+            id: 1,
+            title: 'Банер 2',
+            link: 'https://opodvor.ru/upload/iblock/e9f/e9f0e4e85de12dc4fc37ee4c5e375e76.jpg'
+        },
+    ];
     return (
         <div className="body">
             <div className="body__slider links-slider">
                 <LinksSlider content={sliderContent}/>
             </div>
             <div className="body__map">
-                <h2>Карта ТЦ О!Подворье</h2>
-                <img src={map} alt='map'></img>
+                <h2>Карта ТК О!Подворье</h2>
+                <MapSlider content={mapContent}/>
             </div>
         </div>
     );

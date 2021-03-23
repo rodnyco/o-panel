@@ -10,6 +10,9 @@
 
 .footer__lines {
     padding-left: 45px;
+    max-width: 7.8%;
+    position: absolute;
+    bottom: 0;
 }
 
 .footer__decore {
@@ -17,9 +20,6 @@
     right: -196px;
 }
 
-.footer__slider {
-    width: 75%;
-}
 
 .footer__slider h2{
     margin: 0 auto;
@@ -28,7 +28,9 @@
 
 .footer__slider {
     margin: 0 auto;
-    max-width: 60%;
+    max-width: 50%;
+    position: relative;
+    bottom: 45px;
 }
 
 .declaration-slider {
@@ -36,7 +38,7 @@
 }
 
 .declaration-slider__item {
-    max-width: 200px;
+    max-width: 75%;
 }
 
 .slick-prev {
@@ -44,10 +46,19 @@
 }
 
 .slick-next {
-    right: -14px;
+    right: -45px;
 }
 
 .slick-next, .slick-prev {
     width: 80px;
     height: 80px;
+}
+
+@media (max-height: 1079px) {
+    .footer__slider {
+        max-width: 40%;
+    }
+    .footer__slider h2 {
+        display: none;
+    }
 }

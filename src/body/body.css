@@ -19,10 +19,13 @@
     text-align:center;
 }
 
-.body__map img {
+.body__map{
     display: block;
     margin: 0 auto;
-    height: 349px;
+    position: absolute;
+    max-width: 53%;
+    top: 5%;
+    right: 6%;
 }
 
 .links-slider {
