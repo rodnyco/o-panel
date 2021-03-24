@@ -1,6 +1,5 @@
 import Slider from "react-slick";
 import Image from "../modal/Image";
-import React, { useState } from 'react';
 
 function MapSlider(props) {
     var settings = {

@@ -9,7 +9,7 @@ function Image(props) {
 
     return (
         <div>
-            <img className={props.className} src={props.link} onClick={() => {setIsOpen(!isOpen); console.log('clicked')}}></img>
+            <img alt={props.title} className={props.className} src={props.link} onClick={() => {setIsOpen(!isOpen); console.log('clicked')}}></img>
             {
                 isOpen ?
                     <ModalImage>
