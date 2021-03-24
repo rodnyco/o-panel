@@ -1,15 +1,7 @@
 import Slider from "react-slick";
+import Image from "../modal/Image";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-
-function Banner(props) {
-  return (
-      <div>
-          <img src={props.link} alt={props.title}></img>
-      </div>
-  );
-}
 
 function LinksSlider(props) {
   var settings = {
@@ -24,7 +16,7 @@ function LinksSlider(props) {
 
   const content = props.content;
   const contentItems = content.map((item) => 
-      <Banner key={item.id} link={item.link} title={item.title}/>
+      <Image key={item.id} link={item.link} title={item.title} />
   );
   return (
       <Slider {...settings}>

@@ -1,4 +1,5 @@
 import Slider from "react-slick";
+import Image from "../modal/Image";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import arrowLeft from './arrow-left.svg';
@@ -28,14 +29,6 @@ function RightArrow(props) {
     );
 }
 
-function Declaration(props) {
-    return (
-        <div>
-            <img className="declaration-slider__item" src={props.link} alt={props.title}></img>
-        </div>
-    );
-}
-
 function InfoSlider(props) {
     var settings = {
         dots: true,
@@ -51,7 +44,7 @@ function InfoSlider(props) {
 
     const content = props.content;
     const contentItems = content.map((item) => 
-        <Declaration key={item.id} link={item.img} title={item.title}/>
+        <Image className="declaration-slider__item" key={item.id} link={item.img} title={item.desc}/>
     );
     return (
         <Slider {...settings}>
