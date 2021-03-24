@@ -26,6 +26,7 @@
     max-width: 53%;
     top: 5%;
     right: 6%;
+    z-index: 0;
 }
 
 .links-slider {

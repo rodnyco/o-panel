@@ -27,8 +27,6 @@ function RightArrow(props) {
       ></img>
     );
 }
-  
-
 
 function Declaration(props) {
     return (

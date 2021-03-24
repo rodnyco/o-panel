@@ -1,9 +1,33 @@
 import Slider from "react-slick";
+import ModalImage from "../modal/ModalImage";
+import { Lightbox } from "react-modal-image";
+import React, { useState } from 'react';
 
 function Map(props) {
+    const [isOpen, setIsOpen] = useState(false);
+
     return (
         <div>
-            <img src={props.link} alt={props.title}></img>
+            {/* <ModalImage
+                small={props.link}
+                large={props.link}
+                alt={props.title}
+                onClick={()=>console.log(123)}
+            /> */}
+            <img src={props.link} onClick={() => {setIsOpen(!isOpen); console.log('clicked')}}></img>
+            {
+                isOpen ?
+                    <ModalImage>
+                        <Lightbox
+                            medium={props.link}
+                            large={props.link}
+                            alt={props.title}
+                            onClose={() => setIsOpen(!isOpen)}
+                        />
+                    </ModalImage>
+                    
+                : null    
+            }
         </div>
     );
 }
@@ -16,7 +40,7 @@ function MapSlider(props) {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true
+        autoplay: false
       };
 
     const content = props.content;

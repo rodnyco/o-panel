@@ -7,12 +7,12 @@ function Body() {
     const mapContent = [
         {
             id: 0,
-            title: 'Карта первый этаж',
+            desc: 'Карта первый этаж',
             link: 'https://opodvor.ru/upload/o-panel/map.jpg'
         },
         {
             id: 0,
-            title: 'Карта второй этаж',
+            desc: 'Карта второй этаж',
             link: 'https://opodvor.ru/upload/o-panel/map.jpg'
         },
     ];

@@ -1,0 +1,11 @@
+.modal-image {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.modal-image img {
+    
+}
