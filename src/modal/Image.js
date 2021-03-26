@@ -17,6 +17,8 @@ function Image(props) {
                             medium={props.link}
                             large={props.link}
                             alt={props.title}
+                            hideDownload={true}
+                            hideZoom={true}
                             onClose={() => setIsOpen(!isOpen)}
                         />
                     </ModalImage>

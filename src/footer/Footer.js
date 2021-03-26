@@ -1,51 +1,22 @@
+import { useState, useEffect } from "react";
 import './footer.css';
 import lines from './opodvor-lines.svg';
 import decore from './footer-decor.svg';
 import InfoSlider from './InfoSlider';
 
 function Footer() {
-    const declarations = [
-        {
-            id: 0,
-            img: 'https://opodvor.ru/upload/o-panel/declaration.jpg',
-            desc: 'Правила пожарной безопасности'
-        },
-        {
-            id: 1,
-            img: 'https://opodvor.ru/upload/o-panel/declaration.jpg',
-            desc: 'Правила пожарной безопасности'
-        },
-        {
-            id: 2,
-            img: 'https://opodvor.ru/upload/o-panel/declaration.jpg',
-            desc: 'Правила пожарной безопасности'
-        },
-        {
-            id: 3,
-            img: 'https://opodvor.ru/upload/o-panel/declaration.jpg',
-            desc: 'Правила пожарной безопасности'
-        },
-        {
-            id: 4,
-            img: 'https://opodvor.ru/upload/o-panel/declaration.jpg',
-            desc: 'Правила пожарной безопасности'
-        },
-        {
-            id: 5,
-            img: 'https://opodvor.ru/upload/o-panel/declaration.jpg',
-            desc: 'Правила пожарной безопасности'
-        },
-        {
-            id: 6,
-            img: 'https://opodvor.ru/upload/o-panel/declaration.jpg',
-            desc: 'Правила пожарной безопасности'
-        },
-        {
-            id: 7,
-            img: 'https://opodvor.ru/upload/o-panel/declaration.jpg',
-            desc: 'Правила пожарной безопасности'
-        },
-    ]
+    const [declarations, setDeclarations] = useState([]);
+
+    useEffect(() => {
+        fetch("https://opodvor.ru/o-panel/api.php?entity_type=information", {
+            method: "GET"
+        }).then(res => res.json()).then(
+            (result) => {
+                setDeclarations(result.data);
+            }
+        )
+    }, [])
+
     return (
         <footer className="footer">
             <img className="footer__lines" src={lines} alt='opodvor-lines'></img>
