@@ -39,6 +39,9 @@
 
 .declaration-slider__item {
     max-width: 75%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #4A8B2C;
 }
 
 .slick-prev {
