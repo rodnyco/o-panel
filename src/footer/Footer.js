@@ -21,7 +21,7 @@ function Footer() {
         <footer className="footer">
             <img className="footer__lines" src={lines} alt='opodvor-lines'></img>
             <div className="footer__slider">
-                <h2>Информация для покупателей</h2>
+                <h2 className="footer__slider-title">Информация для покупателей</h2>
                 <div className="declaration-slider">
                     <InfoSlider content={declarations}/>
                 </div>
