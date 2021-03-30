@@ -17,3 +17,28 @@ h2 {
   height: 100vh;
   padding: 0 45px 0 45px;
 }
+
+.bg-welcome-window {
+  position: absolute;
+  z-index: 1000000000000;
+  top: 0;
+  left: 0;
+  right: 0;
+  animation-duration: 2s;
+  animation-name: slideinWelcome;
+}
+
+
+@keyframes slideinWelcome {
+  from {
+    top: -100%;
+    left: 0;
+    right: 0;
+  }
+
+  to {
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}
