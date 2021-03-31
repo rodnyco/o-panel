@@ -26,8 +26,31 @@ h2 {
   right: 0;
   animation-duration: 2s;
   animation-name: slideinWelcome;
+  height: 100%;
+  color: aliceblue;
 }
 
+.welcome-content {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  top: 50%;
+  width:100%;
+  height:100%;
+}
+
+.welcome-content__timer {
+  font-size: 90px;
+}
+
+.welcome-content__description p{
+  text-align: center;
+}
+
+.welcome-content .tap-icon {
+  max-width: 10%;
+}
 
 @keyframes slideinWelcome {
   from {

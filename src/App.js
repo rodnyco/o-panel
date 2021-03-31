@@ -6,7 +6,7 @@ import Header from './header/Header';
 import Body from './body/Body';
 import Footer from './footer/Footer';
 
-const delay = 20;
+const delay = 5*60;
 
 function App() {
   const [isActiveApp, setIsActiveApp] = useState({
