@@ -47,7 +47,7 @@ function Body() {
                 <LinksSlider content={banners}/>
             </div>
             <div className="body__map">
-                <h2>Карта ТК О!Подворье</h2>
+                <h2></h2>
                 <MapSlider content={maps}/>
             </div>
         </div>
