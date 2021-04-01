@@ -7,7 +7,7 @@ import InfoSlider from './InfoSlider';
 function Footer() {
     const [declarations, setDeclarations] = useState([]);
 
-    useEffect(() => {
+    const getContent = () => {
         fetch("https://opodvor.ru/o-panel/api.php?entity_type=information", {
             method: "GET"
         }).then(res => res.json()).then(
@@ -15,6 +15,13 @@ function Footer() {
                 setDeclarations(result.data);
             }
         )
+    }
+    useEffect(() => {
+        getContent();
+        let apiInterval = setInterval(() => {
+            getContent();
+        }, 5000);
+        return () => clearInterval(apiInterval);
     }, [])
 
     return (
