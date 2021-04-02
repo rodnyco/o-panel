@@ -41,7 +41,11 @@ h2 {
 }
 
 .welcome-content__timer {
-  font-size: 90px;
+  font-size: 160px;
+}
+
+.welcome-content__description {
+  font-size: 35px;
 }
 
 .welcome-content__description p{
@@ -49,7 +53,7 @@ h2 {
 }
 
 .welcome-content .tap-icon {
-  max-width: 10%;
+  max-width: 13%;
 }
 
 @keyframes slideinWelcome {

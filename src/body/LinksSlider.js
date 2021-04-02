@@ -16,7 +16,7 @@ function LinksSlider(props) {
 
   const content = props.content;
   const contentItems = content.map((item) => 
-      <Image key={item.id} link={item.link} title={item.title} />
+      <img alt={item.title} src={item.link} ></img>
   );
   return (
       <Slider {...settings}>
