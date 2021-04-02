@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import './body.css';
 import LinksSlider from './LinksSlider';
 import MapSlider from './MapSlider';
@@ -6,7 +6,6 @@ import MapSlider from './MapSlider';
 function Body() {
     const [maps, setMaps] = useState([]);
     const [banners, setBanners] = useState([]);
-    const [count, setCount] = useState(0);
 
     const getMaps = () => {
         fetch("https://opodvor.ru/o-panel/api.php?entity_type=map", {
@@ -47,7 +46,7 @@ function Body() {
                 <LinksSlider content={banners}/>
             </div>
             <div className="body__map">
-                <h2></h2>
+                {/* <h2></h2> */}
                 <MapSlider content={maps}/>
             </div>
         </div>

@@ -1,5 +1,4 @@
 import Slider from "react-slick";
-import Image from "../modal/Image";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 

@@ -19,7 +19,7 @@ function WelcomeWindow(props) {
               <h1>Информационный стенд О!Подворье</h1>
               <p>Для продолжения коснитесь экрана</p>
             </div>
-            <img className="tap-icon" src={tapIcon}></img>
+            <img className="tap-icon" src={tapIcon} alt="icon tap touch display"></img>
           </div>
         </div>
       ) : (
