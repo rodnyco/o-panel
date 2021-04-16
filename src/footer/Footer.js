@@ -8,7 +8,7 @@ function Footer() {
     const [declarations, setDeclarations] = useState([]);
 
     const getContent = () => {
-        fetch("https://opodvor.ru/o-panel/api.php?entity_type=information", {
+        fetch("https://opodvor.ru/o-panel/api.php?entity_type=information&key="+process.env.REACT_APP_SERVER_KEY, {
             method: "GET"
         }).then(res => res.json()).then(
             (result) => {

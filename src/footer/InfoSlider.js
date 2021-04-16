@@ -37,14 +37,14 @@ function InfoSlider(props) {
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 1,
-        autoplay: false,
+        autoplay: true,
         prevArrow: <LeftArrow />,
         nextArrow: <RightArrow />
       };
 
     const content = props.content;
     const contentItems = content.map((item) => 
-        <Image className="declaration-slider__item" key={item.id} link={item.img} title={item.desc}/>
+        <Image className="declaration-slider__item" key={item.id} link={item.link} title={item.desc}/>
     );
     return (
         <Slider {...settings}>

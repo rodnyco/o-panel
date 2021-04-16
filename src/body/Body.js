@@ -8,7 +8,7 @@ function Body() {
     const [banners, setBanners] = useState([]);
 
     const getMaps = () => {
-        fetch("https://opodvor.ru/o-panel/api.php?entity_type=map", {
+        fetch("https://opodvor.ru/o-panel/api.php?entity_type=map&key="+process.env.REACT_APP_SERVER_KEY, {
                 method: "GET"
             })
             .then(res => res.json())
@@ -20,7 +20,7 @@ function Body() {
 
 
     const getBanners = () => {
-        fetch("https://opodvor.ru/o-panel/api.php?entity_type=banner", {
+        fetch("https://opodvor.ru/o-panel/api.php?entity_type=banner&key="+process.env.REACT_APP_SERVER_KEY, {
             method: "GET"
             }).then(res => res.json()).then(
             (result) => {
